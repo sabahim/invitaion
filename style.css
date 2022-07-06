@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+img {
+    max-width: 500px;
+    width: 100%;
+    display: inline-block;
+}
