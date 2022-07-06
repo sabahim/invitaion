@@ -6,17 +6,13 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
+    font-size: 10vw;
 }
 
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-img {
-    width: 100%;
 }
 
 #confetti {
