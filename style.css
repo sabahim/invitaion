@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: iransans;
+    src: url("./IranianSans.ttf");
+}
+
 body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
+    font-family: iransans, serif;
+    font-size: 15px;
 }
 
 .background {
@@ -21,12 +28,43 @@ body {
     filter: blur(5px);
 }
 
-.container {
+.present-btn {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 40px 40px 0 0;
+    max-width: 600px;
+    width: 90%;
+    height: 250px;
+    background-color: rgb(106, 64, 255);
+    border: 5px solid white;
+}
+
+.invitation-png {}
+
+.present-btn:hover {
+    cursor: pointer;
+}
+
+.container {
+    width: 95%;
+    max-width: fit-content;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    z-index: -4;
     justify-content: center;
     border-radius: 50px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    transform: translateY(-15px);
+    transition: all .5s;
+}
+
+#confetti {
+    display: none;
 }
 
 img {
