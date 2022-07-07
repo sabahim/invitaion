@@ -42,7 +42,13 @@ body {
     border: 5px solid white;
 }
 
-.invitation-png {}
+.credits,
+a {
+    margin-top: 1em;
+    text-decoration: none;
+    color: white;
+}
+
 
 .present-btn:hover {
     cursor: pointer;
